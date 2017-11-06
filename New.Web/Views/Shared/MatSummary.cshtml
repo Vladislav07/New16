@@ -1,0 +1,36 @@
+﻿@model New.Domain.Entities.Material
+
+<div class="well">
+     
+       <h5>
+        <strong>@Model.type</strong>
+          <strong>@Model.name</strong>
+         <strong>@Model.Description</strong>       
+          
+
+        <span class="pull-right label label-primary">@Model.Cena.ToString("# руб")</span>
+       </h5>
+
+      
+       @using (Html.BeginForm("AddToCart", "Cart"))
+    {
+        <div class="pull-right">
+            @Html.HiddenFor(x => x.index)
+            @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
+            <input type="submit" class="btn btn-success" value="Добавить в корзину" />
+        </div>          
+    }
+
+
+     
+     @using (Html.BeginForm("Raskroy", "Order"))
+    {
+        <div class="pull-right">
+            @Html.HiddenFor(x => x.index)
+            
+
+            <input type="submit" class="btn btn-success" value="Раскрой" />
+        </div>          
+    }
+   
+</div>

@@ -1,0 +1,40 @@
+﻿@model New.Domain.Entities.RequestDetails
+
+@{
+    ViewBag.Title = "ЗАО ТоМаг: форма заказа";
+}
+
+<h2>Оформить заказ сейчас</h2>
+<p>Пожалуйста введи ваши контактные данные, и мы свяжемся с вами!</p>
+
+
+@using (Html.BeginForm())
+{
+    <h3>Данные</h3>
+    <div class="form-group">
+        <label>Ваше имя:</label>
+        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    </div>
+
+    <h3>Контактный данные</h3>
+    <div class="form-group">
+        <label>телефон:</label>
+        @Html.TextBoxFor(x => x.Line1, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Второй телефон:</label>
+        @Html.TextBoxFor(x => x.Line2, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>E-mail:</label>
+        @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Сообщение:</label>
+        @Html.TextBoxFor(x => x.Message, new { @class = "form-control" })
+    </div>
+
+    <div class="text-center">
+        <input class="btn btn-primary" type="submit" value="Обработать заказ" />
+    </div>
+}

@@ -1,0 +1,83 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input[type="text"],
+input[type="password"] {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.raskroy1 {
+    width:95%;
+    height:50px;
+    border:1px solid;
+    margin-bottom:30px;
+   
+}
+
+.col1 {
+   
+    margin-left:10px;
+    padding:25px;
+    width:30%;
+    float:left;
+    border:1px solid; 
+    
+}
+
+.col2 {
+    margin-left:25px;
+    padding:25px;
+    width:50%;
+    border:1px solid;
+    float:left;
+    vertical-align:middle;
+}
+.col3 {
+    width:20%;
+    
+   margin-top:600px;
+   height:50px;
+
+    border:1px solid;
+}
+.table1 {
+    width:100%;
+
+}
+#Button1 {
+    
+}

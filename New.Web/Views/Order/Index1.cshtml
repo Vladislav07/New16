@@ -1,0 +1,45 @@
+﻿@using New.Domain.Entities
+@model IEnumerable<Material>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <table  class="table">
+        <thead>
+        <tr>
+            <th class="dl"> Длина</th>
+            <th> Ширина</th>
+            <th> Количество</th>
+        </tr>
+         </thead>   
+     <tbody>
+        @foreach (Material i in Model)
+        {
+            <tr>
+                 <td>@i.type </td>
+                <td>@i.name</td>
+                <td>@i.Description</td>                     
+            </tr>
+            
+            foreach (part p in i.parts)
+            {
+                
+              <tr>
+                 <td class="tex">@p.Length </td>
+                <td class="tex">@p.width</td>
+                <td class="tex">@p.quantitu</td> 
+                 <td class="tex">@p.index</td>                     
+            </tr>  
+            
+           
+            }
+        }
+         
+             
+    </table>
+</body>
+</html>
+

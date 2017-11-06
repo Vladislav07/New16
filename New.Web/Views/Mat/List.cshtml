@@ -1,0 +1,25 @@
+﻿@using New.Web.Models
+@model MatListViewModel
+@using New.Web.HtmlHelpers
+
+@{
+    ViewBag.Title = "Товары";
+}
+
+
+@foreach (var p in @Model.Materials)
+{
+   
+    @Html.Partial("MatSummary", p)  
+     foreach (var t in Model.Sheets.Where(d => d.MatID == p.index))
+          {
+              <strong>@t.length</strong>
+              <strong>@t.thick</strong>
+          }    
+    
+}
+
+
+<div class="btn-group pull-right">
+    @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new { page = x,category = Model.CurrentCategory }))
+</div>

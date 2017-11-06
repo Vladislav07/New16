@@ -1,0 +1,69 @@
+﻿@model IEnumerable<New.Domain.Entities.part>
+
+@using(Html.BeginForm()){
+<table class="table1">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Length)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.rotate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.quantitu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.thick)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.width)
+        </th>
+        <th>
+            
+        </th>
+        <th></th>
+    </tr>
+    
+
+@if(Model!=null){foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Length)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.rotate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.quantitu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.thick)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.width)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.index)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+}
+    </table>
+             <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Раскроить" class="btn btn-default" />
+                </div>
+            </div>
+    }
+

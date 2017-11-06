@@ -1,0 +1,49 @@
+﻿@model New.Domain.Entities.data_order
+@using New.Web.Helpers
+<!DOCTYPE html>
+@{
+    Layout = null;
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="container" style="border:2px solid #000; width:100%">
+    <div role="row">
+        <h4>data_order</h4>
+    	<hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.note)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.note)
+            </dd>
+    
+        </dl>
+    </div>
+        <div>
+            @foreach(var m in Model.list_materials){
+                foreach(var p in m.list_nesting_plans){
+            @Html.CreateList(p)
+            }
+            }
+        </div>
+     
+        @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+        @Html.ActionLink("Back to List", "Index")
+   
+</div>
+</body>
+</html>

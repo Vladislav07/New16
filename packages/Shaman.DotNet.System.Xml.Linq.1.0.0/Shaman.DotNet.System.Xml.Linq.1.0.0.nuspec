@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Shaman.DotNet.System.Xml.Linq</id>
+    <version>1.0.0</version>
+    <authors>Shaman.DotNet.System.Xml.Linq</authors>
+    <owners>Shaman.DotNet.System.Xml.Linq</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Shaman.DotNet.System.Xml.Linq</description>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="mscorlib" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework=".NETFramework4.5" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

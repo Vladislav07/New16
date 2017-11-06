@@ -1,0 +1,10 @@
+D:\Users\pto3\Documents\Visual Studio 2012\Projects\New\Dop\bin\Debug\Dop.exe.config
+D:\Users\pto3\Documents\Visual Studio 2012\Projects\New\Dop\bin\Debug\Dop.exe
+D:\Users\pto3\Documents\Visual Studio 2012\Projects\New\Dop\bin\Debug\Dop.pdb
+D:\Users\pto3\Documents\Visual Studio 2012\Projects\New\Dop\obj\Debug\Dop.exe
+D:\Users\pto3\Documents\Visual Studio 2012\Projects\New\Dop\obj\Debug\Dop.pdb
+C:\Users\Vlad\Documents\Visual Studio 2012\Projects\New16\Dop\bin\Debug\Dop.exe.config
+C:\Users\Vlad\Documents\Visual Studio 2012\Projects\New16\Dop\bin\Debug\Dop.exe
+C:\Users\Vlad\Documents\Visual Studio 2012\Projects\New16\Dop\bin\Debug\Dop.pdb
+C:\Users\Vlad\Documents\Visual Studio 2012\Projects\New16\Dop\obj\Debug\Dop.exe
+C:\Users\Vlad\Documents\Visual Studio 2012\Projects\New16\Dop\obj\Debug\Dop.pdb
